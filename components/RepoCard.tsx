@@ -1,3 +1,4 @@
+// components/RepoCard.tsx
 import {
   VscEye,
   VscRepoForked,
@@ -6,9 +7,7 @@ import {
   VscLinkExternal,
   VscTypeHierarchy,
 } from 'react-icons/vsc';
-
 import { Repo } from '@/types';
-
 import styles from '@/styles/RepoCard.module.css';
 
 interface RepoCardProps {
@@ -27,23 +26,23 @@ const RepoCard = ({ repo }: RepoCardProps) => {
           </div>
         )}
       </div>
+
       <p>{repo.description || 'No description provided'}</p>
+
       <div className={styles.stats}>
-        <div>
-          <div>
-            <VscStarEmpty className={styles.icon} />
-            {repo.stargazers_count}
+        <div className={styles.leftStats}>
+          <div className={styles.stat}>
+            <VscStarEmpty className={styles.icon} /> {repo.stargazers_count ?? 0}
           </div>
-          <div>
-            <VscRepoForked className={styles.icon} />
-            {repo.forks}
+          <div className={styles.stat}>
+            <VscRepoForked className={styles.icon} /> {repo.forks ?? 0}
           </div>
-          <div>
-            <VscEye className={styles.icon} />
-            {repo.watchers}
+          <div className={styles.stat}>
+            <VscEye className={styles.icon} /> {repo.watchers ?? 0}
           </div>
         </div>
-        <div>
+
+        <div className={styles.rightLinks}>
           <a
             href={repo.html_url}
             target="_blank"
@@ -69,3 +68,4 @@ const RepoCard = ({ repo }: RepoCardProps) => {
 };
 
 export default RepoCard;
+
