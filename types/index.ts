@@ -5,9 +5,14 @@ export interface Article {
   url: string;
   cover_image?: string;
   tags?: string[];
-  published_at?: string;          // add this
-  readable_publish_date?: string; // add this
+  page_views_count?: number;
+  public_reactions_count?: number;
+  comments_count?: number;
+  // Optional publication date fields
+  published_at?: string;
+  readable_publish_date?: string;
 }
+
 export interface Project {
   title: string;
   description: string;
