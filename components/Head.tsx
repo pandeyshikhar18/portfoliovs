@@ -12,7 +12,7 @@ const CustomHead = ({
   title,
   description = "Shikhar Pandey is a full-stack developer building websites and applications you'll love to use.",
   keywords = "shikhar pandey, web developer, full-stack, portfolio, AI projects, GitHub projects",
-  url = "https://shikhars-portfolio.vercel.app",
+  url = "https://shikharportfolio.vercel.app/",
   image = "https://i.imgur.com/4zi5KkQ.png"
 }: CustomHeadProps) => {
   return (
