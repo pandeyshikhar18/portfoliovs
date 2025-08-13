@@ -61,9 +61,5 @@ Email: pandeyshikhar07@gmail.com
 
 GitHub: pandeyshikhar18
 
-LinkedIn: Shikhar Pandey
-
-Resume: View Resume
-
 License
 This project is open-source and available under the MIT License.
