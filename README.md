@@ -1,5 +1,5 @@
 # Shikhar Pandey Portfolio
-![Portfolio Screenshot](./logos/portfolio-screenshot.png)
+![Portfolio Screenshot](./public/logos/portfolio-screenshot.png)
 
 Welcome to my personal portfolio! This project showcases my research publications, GitHub repositories, and contact information. Built with **Next.js** and **TypeScript**, it is fully responsive and deployed on **Vercel**.
 
