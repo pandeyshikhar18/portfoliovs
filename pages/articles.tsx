@@ -1,4 +1,3 @@
-// pages/articles.tsx
 import ArticleCard from '@/components/ArticleCard';
 import { Article } from '@/types';
 import styles from '@/styles/ArticlesPage.module.css';
@@ -24,18 +23,19 @@ const ArticlesPage = ({ articles }: ArticlesPageProps) => {
 };
 
 export async function getStaticProps() {
-  // Publications
- const publications: Article[] = [
-  {
-    id: 'ieee-10593254',
-    title: 'Optimizing Resource Efficiency in Smart Greenhouses through IoT',
-    description:
-      'Published in IEEE Xplore, this paper proposes an IoT-based system to monitor and control greenhouse resources such as water, light, and temperature, improving operational efficiency.',
-    url: 'https://ieeexplore.ieee.org/document/10593254',
-    cover_image: '/logos/ieee.png',
-    tags: ['IoT', 'Smart Agriculture', 'Resource Optimization'],
-  },
-];
+  const publications: Article[] = [
+    {
+      id: 'ieee-10593254',
+      title: 'Optimizing Resource Efficiency in Smart Greenhouses through IoT',
+      description:
+        'Published in IEEE Xplore, this paper proposes an IoT-based system to monitor and control greenhouse resources such as water, light, and temperature, improving operational efficiency.',
+      url: 'https://ieeexplore.ieee.org/document/10593254',
+      cover_image: '/logos/ieee.png',
+      tags: ['IoT', 'Smart Agriculture', 'Resource Optimization'],
+      published_at: '2024-07-15', // now allowed
+      readable_publish_date: 'July 15, 2024', // now allowed
+    },
+  ];
 
   return {
     props: { title: 'Publications', articles: publications },
@@ -44,4 +44,3 @@ export async function getStaticProps() {
 }
 
 export default ArticlesPage;
-
