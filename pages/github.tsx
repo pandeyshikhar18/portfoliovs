@@ -1,9 +1,7 @@
 import Image from 'next/image';
 import { VscRepo } from 'react-icons/vsc';
-
 import RepoCard from '@/components/RepoCard';
 import { Repo, User } from '@/types';
-
 import styles from '@/styles/GithubPage.module.css';
 
 interface GithubPageProps {
@@ -11,47 +9,44 @@ interface GithubPageProps {
   user: User;
 }
 
-// Favorite repos and their descriptions
+// Favorite repos with custom description
 const favoriteRepos = [
   {
     name: "codedai-aicodeeditor",
-    description: "An AI-powered code editor with smart autocomplete, explanations, and corrections."
+    description: "AI-powered code editor with smart autocomplete, explanations, and corrections."
   },
   {
     name: "News_Summarizer_TTS",
-    description: "A news summarization tool with text-to-speech support, providing concise news updates."
+    description: "News summarization tool with text-to-speech support."
   },
   {
     name: "cursor-ai",
-    description: "A productivity tool that integrates AI assistance within your development workflow."
+    description: "Productivity tool integrating AI assistance in your workflow."
   },
   {
     name: "Crop-Disease-Prediction",
-    description: "Machine learning model to predict crop diseases and suggest solutions for farmers."
+    description: "ML model to predict crop diseases and suggest solutions for farmers."
   }
 ];
 
 const GithubPage = ({ repos, user }: GithubPageProps) => {
-  // Sort repos so favorites come first
-  const sortedRepos = [
+  // Merge favorites first, overriding description
+  const sortedRepos: Repo[] = [
     ...favoriteRepos
       .map(fav => {
         const repo = repos.find(r => r.name === fav.name);
-        if (repo) {
-          return { ...repo, description: fav.description };
-        }
+        if (repo) return { ...repo, description: fav.description };
       })
-      .filter(Boolean),
+      .filter(Boolean) as Repo[],
     ...repos.filter(r => !favoriteRepos.some(f => f.name === r.name))
-  ].slice(0, 4); // Only show top 4 repos
+  ].slice(0, 4); // Top 4 repos
 
   return (
     <div className={styles.layout}>
       <div className={styles.pageHeading}>
         <h1 className={styles.pageTitle}>GitHub</h1>
         <p className={styles.pageSubtitle}>
-          Browse through my GitHub repositories and see what I&apos;ve been
-          working on. These are my favorite repositories and other public projects.
+          Browse through my GitHub repositories, showing favorites and top projects.
         </p>
       </div>
 
@@ -79,12 +74,12 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
         </div>
 
         <div className={styles.sectionHeader}>
-          <h3 className={styles.sectionTitle}>Favorite Repositories</h3>
+          <h3 className={styles.sectionTitle}>Top Repositories</h3>
         </div>
 
         <div className={styles.reposContainer}>
           {sortedRepos.map(repo => (
-            <RepoCard key={repo.id} repo={repo} description={repo.description} />
+            <RepoCard key={repo.id} repo={repo} />
           ))}
         </div>
       </div>
@@ -93,13 +88,11 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
 };
 
 export async function getStaticProps() {
-  const username = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
+  const username = 'pandeyshikhar18';
 
-  // Fetch user
   const userRes = await fetch(`https://api.github.com/users/${username}`);
-  const user = await userRes.json();
+  const user: User = await userRes.json();
 
-  // Fetch repos
   const repoRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
   const repos: Repo[] = await repoRes.json();
 
@@ -110,3 +103,4 @@ export async function getStaticProps() {
 }
 
 export default GithubPage;
+
