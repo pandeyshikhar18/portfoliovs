@@ -1,3 +1,4 @@
+// pages/articles.tsx
 import ArticleCard from '@/components/ArticleCard';
 import { Article } from '@/types';
 import styles from '@/styles/ArticlesPage.module.css';
@@ -9,7 +10,7 @@ interface ArticlesPageProps {
 const ArticlesPage = ({ articles }: ArticlesPageProps) => {
   return (
     <div className={styles.layout}>
-      <h1 className={styles.pageTitle}>Publication</h1>
+      <h1 className={styles.pageTitle}>Publications</h1>
       <p className={styles.pageSubtitle}>
         Here are some of my research works and technical publications.
       </p>
@@ -32,15 +33,15 @@ export async function getStaticProps() {
       url: 'https://ieeexplore.ieee.org/document/10593254',
       cover_image: '/logos/ieee.png',
       tags: ['IoT', 'Smart Agriculture', 'Resource Optimization'],
-      published_at: '2024-07-15', // now allowed
-      readable_publish_date: 'July 15, 2024', // now allowed
     },
+    // You can add more articles here in the future
   ];
 
   return {
     props: { title: 'Publications', articles: publications },
-    revalidate: 60,
+    revalidate: 60, // optional incremental static regeneration
   };
 }
 
 export default ArticlesPage;
+
