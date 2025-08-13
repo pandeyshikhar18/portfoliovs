@@ -2,11 +2,11 @@ export interface Article {
   id: string;
   title: string;
   description: string;
-  cover_image: string;
   url: string;
-  page_views_count: number;
-  public_reactions_count: number;
-  comments_count: number;
+  cover_image?: string;
+  tags?: string[];
+  published_at?: string;
+  readable_publish_date?: string;
 }
 
 export interface Project {
