@@ -30,9 +30,9 @@ export const projects: Project[] = [
   },
   {
     title: 'VSCode Portfolio',
-    description: 'VS Code themed developer portfolio built with Next.js.',
+    description: 'VS Code themed developer portfolio.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
+    link: 'https://github.com/pandeyshikhar18/portfoliovs',
     slug: 'vscode-portfolio',
   },
 ];
