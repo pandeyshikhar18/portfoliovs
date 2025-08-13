@@ -1,3 +1,4 @@
+// pages/articles.tsx
 import ArticleCard from '@/components/ArticleCard';
 import { Article } from '@/types';
 import styles from '@/styles/ArticlesPage.module.css';
@@ -23,6 +24,7 @@ const ArticlesPage = ({ articles }: ArticlesPageProps) => {
 };
 
 export async function getStaticProps() {
+  // Publications
   const publications: Article[] = [
     {
       id: 'ieee-10593254',
@@ -30,17 +32,18 @@ export async function getStaticProps() {
       description:
         'Published in IEEE Xplore, this paper proposes an IoT-based system to monitor and control greenhouse resources such as water, light, and temperature, improving operational efficiency.',
       url: 'https://ieeexplore.ieee.org/document/10593254',
-      published_at: '2024-07-15',
       cover_image: '/logos/ieee.png',
       readable_publish_date: 'July 15, 2024',
+      published_at: '2024-07-15', // <-- now matches the updated type
       tags: ['IoT', 'Smart Agriculture', 'Resource Optimization'],
     },
   ];
 
   return {
     props: { title: 'Publications', articles: publications },
-    revalidate: 60, // optional for ISR
+    revalidate: 60,
   };
 }
 
 export default ArticlesPage;
+
