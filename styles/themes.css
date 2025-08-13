@@ -1,0 +1,166 @@
+/* =========================
+   Default VS Code Dark Theme
+   ========================= */
+:root {
+  --main-bg: #1e1e1e;
+  --bg-text: #2d2d2d;
+  --text-color: #d4d4d4;
+  --accent-color: #007acc;
+  --titlebar-bg: #252526;
+  --sidebar-bg: #1e1e1e;
+  --sidebar-hover-bg: #333333;
+  --explorer-bg: #252526;
+  --explorer-hover-bg: #2d2d2d;
+  --explorer-border: #3c3c3c;
+  --tabs-bg: #1e1e1e;
+  --tab-bg: #1e1e1e;
+  --tab-active-bg: #252526;
+  --tab-border: #3c3c3c;
+  --bottombar-bg: #1e1e1e;
+  --bottombar-border: #333333;
+  --button-bg: #0e639c;
+  --button-text: #ffffff;
+  --bottombar-hover-bg: #2d2d2d;
+  --scrollbar-track-bg: #1e1e1e;
+  --scrollbar-thumb-bg: #333333;
+  --article-bg: #252526;
+}
+
+/* =========================
+   GitHub Dark
+   ========================= */
+[data-theme='github-dark'] {
+  --main-bg: #0d1117;
+  --bg-text: rgba(110, 118, 129, 0.35);
+  --text-color: #c9d1d9;
+  --accent-color: #58a6ff;
+  --titlebar-bg: #161b22;
+  --sidebar-bg: #0d1117;
+  --sidebar-hover-bg: #161b22;
+  --explorer-bg: #161b22;
+  --explorer-hover-bg: #0d1117;
+  --explorer-border: #21262d;
+  --tabs-bg: #161b22;
+  --tab-bg: #161b22;
+  --tab-active-bg: #0d1117;
+  --tab-border: #21262d;
+  --bottombar-bg: #161b22;
+  --bottombar-border: #21262d;
+  --button-bg: #238636;
+  --button-text: #ffffff;
+  --bottombar-hover-bg: #30363d;
+  --scrollbar-track-bg: #161b22;
+  --scrollbar-thumb-bg: #30363d;
+  --article-bg: #0d1117;
+}
+
+/* =========================
+   Warm Light
+   ========================= */
+[data-theme='soft-mint'] {
+  --main-bg: #1e2f2a;           /* darker mint background */
+  --bg-text: #26443d;           /* subtle layer/contrast */
+  --text-color: #c0d6c1;        /* soft green text */
+  --accent-color: #4db58a;      /* minty accent for buttons/links */
+  --titlebar-bg: #243c35;       /* slightly darker header */
+  --sidebar-bg: #1f3430;        /* sidebar in dark mint tone */
+  --sidebar-hover-bg: #2a4a42;  /* hover highlight */
+  --explorer-bg: #1f3430;
+  --explorer-hover-bg: #2a4a42;
+  --explorer-border: #366357;   /* subtle border for separation */
+  --tabs-bg: #1f3430;
+  --tab-bg: #1f3430;
+  --tab-active-bg: #2a4a42;
+  --tab-border: #366357;
+  --bottombar-bg: #1f3430;
+  --bottombar-border: #366357;
+  --button-bg: #4db58a;
+  --button-text: #1e2f2a;
+  --bottombar-hover-bg: #2a4a42;
+  --scrollbar-track-bg: #26443d;
+  --scrollbar-thumb-bg: #4db58a;
+  --article-bg: #203a34;        /* darker background for content/articles */
+}
+/* =========================
+   Aurora Glow (Creative Dark)
+   ========================= */
+[data-theme='aurora-glow'] {
+  --main-bg: #0a0f1a;
+  --bg-text: #111625;
+  --text-color: #e0e0e0;
+  --accent-color: #7fdbca;
+  --titlebar-bg: #0a0f1a;
+  --sidebar-bg: #0a0f1a;
+  --sidebar-hover-bg: #111625;
+  --explorer-bg: #111625;
+  --explorer-hover-bg: #1a1f33;
+  --explorer-border: #22283f;
+  --tabs-bg: #0a0f1a;
+  --tab-bg: #111625;
+  --tab-active-bg: #1a1f33;
+  --tab-border: transparent;
+  --bottombar-bg: #111625;
+  --bottombar-border: #22283f;
+  --button-bg: #7fdbca;
+  --button-text: #0a0f1a;
+  --bottombar-hover-bg: #1f263c;
+  --scrollbar-track-bg: #0a0f1a;
+  --scrollbar-thumb-bg: #1a1f33;
+  --article-bg: #111625;
+}
+
+/* =========================
+   Nordic Sky (Soft Dark)
+   ========================= */
+[data-theme='nordic-sky'] {
+  --main-bg: #2e3440;
+  --bg-text: #3b4252;
+  --text-color: #eceff4;
+  --accent-color: #88c0d0;
+  --titlebar-bg: #2e3440;
+  --sidebar-bg: #2e3440;
+  --sidebar-hover-bg: #434c5e;
+  --explorer-bg: #3b4252;
+  --explorer-hover-bg: #4c566a;
+  --explorer-border: rgba(136, 192, 208, 0.2);
+  --tabs-bg: #2e3440;
+  --tab-bg: #3b4252;
+  --tab-active-bg: #434c5e;
+  --tab-border: transparent;
+  --bottombar-bg: #3b4252;
+  --bottombar-border: transparent;
+  --button-bg: #88c0d0;
+  --button-text: #2e3440;
+  --bottombar-hover-bg: #4c566a;
+  --scrollbar-track-bg: #2e3440;
+  --scrollbar-thumb-bg: #4c566a;
+  --article-bg: #434c5e;
+}
+
+/* =========================
+   Night Owl (Deep Dark)
+   ========================= */
+[data-theme='owl-eclipse'] {
+  --main-bg: #0b1b2b;
+  --bg-text: #102b45;
+  --text-color: #c8d6e5;
+  --accent-color: #ff9d00;
+  --titlebar-bg: #0b1b2b;
+  --sidebar-bg: #0b1b2b;
+  --sidebar-hover-bg: #15314a;
+  --explorer-bg: #0b1b2b;
+  --explorer-hover-bg: #15314a;
+  --explorer-border: transparent;
+  --tabs-bg: #0b1b2b;
+  --tab-bg: #0b1b2b;
+  --tab-active-bg: #13283f;
+  --tab-border: rgba(255,255,255,0.1);
+  --bottombar-bg: #0b1b2b;
+  --bottombar-border: #192733;
+  --button-bg: #ff9d00;
+  --button-text: #0b1b2b;
+  --bottombar-hover-bg: #1c2b40;
+  --scrollbar-track-bg: #0b1b2b;
+  --scrollbar-thumb-bg: #15314a;
+  --article-bg: #102b45;
+}
