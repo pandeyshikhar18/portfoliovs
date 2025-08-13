@@ -11,9 +11,9 @@ interface CustomHeadProps {
 const CustomHead = ({
   title,
   description = "Shikhar Pandey is a full-stack developer building websites and applications you'll love to use.",
-  keywords = "shikhar pandey, web developer, full-stack, portfolio, AI projects, GitHub projects",
+  keywords = "",
   url = "https://shikharportfolio.vercel.app/",
-  image = "https://i.imgur.com/4zi5KkQ.png"
+  image = "https://ibb.co/0y9L3Vfr"
 }: CustomHeadProps) => {
   return (
     <Head>
