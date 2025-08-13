@@ -5,10 +5,9 @@ export interface Article {
   url: string;
   cover_image?: string;
   tags?: string[];
-  published_at?: string;
-  readable_publish_date?: string;
+  published_at?: string;          // add this
+  readable_publish_date?: string; // add this
 }
-
 export interface Project {
   title: string;
   description: string;
