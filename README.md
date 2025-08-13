@@ -48,7 +48,7 @@ Edit
 ## Deployment
 
 This portfolio is deployed on **Vercel**.  
-Live demo: [https://your-portfolio.vercel.app]([https://your-portfolio.vercel.app](https://shikharportfolio.vercel.app/))
+Live demo: [https://your-portfolio.vercel.app]([Link](https://shikharportfolio.vercel.app/))
 
 To deploy locally:
 
