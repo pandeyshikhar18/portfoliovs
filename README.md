@@ -37,7 +37,7 @@ Welcome to my personal portfolio! This project showcases my research publication
 ├─ ContactPage.module.css
 └─ ContactCode.module.css
 /types
-├─ index.ts # Article, Repo, User types
+└─ index.ts # Article, Repo, User types
 /public
 └─ logos # Publication logos
 
@@ -48,7 +48,7 @@ Edit
 ## Deployment
 
 This portfolio is deployed on **Vercel**.  
-Live demo: [https://your-portfolio.vercel.app]([Link](https://shikharportfolio.vercel.app/))
+Live demo: [https://shikharportfolio.vercel.app](https://shikharportfolio.vercel.app)
 
 To deploy locally:
 
@@ -61,6 +61,10 @@ Contact
 Email: pandeyshikhar07@gmail.com
 
 GitHub: pandeyshikhar18
+
+LinkedIn: Shikhar Pandey
+
+Resume: View Resume
 
 License
 This project is open-source and available under the MIT License.
