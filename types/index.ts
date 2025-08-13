@@ -3,14 +3,11 @@ export interface Article {
   title: string;
   description: string;
   url: string;
-  cover_image?: string;
-  tags?: string[];
+  cover_image: string;
+  tags: string[];
   page_views_count?: number;
   public_reactions_count?: number;
   comments_count?: number;
-  // Optional publication date fields
-  published_at?: string;
-  readable_publish_date?: string;
 }
 
 export interface Project {
