@@ -22,10 +22,10 @@ export const projects: Project[] = [
     slug: 'news-summarizer-tts',
   },
   {
-    title: 'Text to Handwriting Converter',
+    title: 'TextoHand-Text to Handwriting Converter',
     description: 'Converts typed text into realistic handwriting styles (Coming soon).',
     logo: '/logos/HC.png',
-    link: '#',
+    link: 'https://github.com/pandeyshikhar18/TextoHand/tree/main',
     slug: 'text-to-handwriting',
   },
   {
