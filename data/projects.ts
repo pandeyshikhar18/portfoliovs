@@ -23,7 +23,7 @@ export const projects: Project[] = [
   },
   {
     title: 'TextoHand-Text to Handwriting Converter',
-    description: 'Converts typed text into realistic handwriting styles (Coming soon).',
+    description: 'Converts typed text into realistic handwriting styles.',
     logo: '/logos/HC.png',
     link: 'https://github.com/pandeyshikhar18/TextoHand/tree/main',
     slug: 'text-to-handwriting',
