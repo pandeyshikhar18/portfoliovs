@@ -7,7 +7,7 @@ const contactItems = [
   { social: 'linkedin', link: 'shikharpandey', href: 'https://www.linkedin.com/in/shikhar-pandey-a54442222/' },
   { social: 'twitter', link: 'shikharp18', href: 'https://www.twitter.com/shikharp18' },
   { social: 'instagram', link: 'shikharp18', href: 'https://www.instagram.com/shikharp18' },
-  { social: 'resume', link: 'View Resume', href: 'https://drive.google.com/file/d/1TZvo6uZt0IsQkiUsuCMFYoeYSQjxzeu5/view?usp=sharing' }, 
+  { social: 'resume', link: 'View Resume', href: 'https://drive.google.com/file/d/1KPhyRkMSeLohChW9lsE9_fFBEyTphLkN/view?usp=sharing' }, 
 ];
 
 const ContactCode = () => {
